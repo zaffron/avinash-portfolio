@@ -40,19 +40,20 @@ export const NavMenu = styled.div`
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
+    ${props => props.toggled && 'bottom: 0;'};
   }
 `
 
 export const NavList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   list-style: none;
   margin: 0;
 `
 
 export const NavItem = styled.li`
-  display: flex;
+  display: grid;
   align-items: center;
   margin: 0;
   height: 100%;

@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react"
 import { FaTimes } from "react-icons/fa"
-import { RiAppsLine } from "react-icons/ri"
+import { BsHouse, BsCardImage } from "react-icons/bs"
+import { RiAppsLine, RiBriefcase2Line, RiMessage3Line } from "react-icons/ri"
+import { AiOutlineUser } from 'react-icons/ai'
+import { MdComputer } from 'react-icons/md'
 
 import { useScrollPosition } from "hooks/useScrollPosition"
 
@@ -21,14 +24,14 @@ import {
 
 export default function Header() {
   const [scrollY, setScrollY] = useState(0)
-  const [scrolledHeader, setScrolledHeader] = useState()
+  const [scrolledHeader, setScrolledHeader] = useState(false)
+  const [navbarToggled, toggleNavbar] = useState(false)
   useScrollPosition(function setScrollPosition({ currentPosition }) {
     setScrollY(currentPosition.y)
   })
 
   useEffect(() => {
-    console.log(scrollY)
-    if (scrollY <= -80) {
+    if (scrollY <= -40) {
       setScrolledHeader(true)
     } else {
       setScrolledHeader(false)
@@ -38,55 +41,55 @@ export default function Header() {
   return (
     <HeaderWrapper scrolled={scrolledHeader}>
       <Nav>
-        <NavLogo href="/" class="nav__logo">
+        <NavLogo to="/">
           Zaffron
         </NavLogo>
-        <NavMenu>
+        <NavMenu toggled={navbarToggled}>
           <NavList>
             <NavItem>
               <NavLink to="/">
-                <NavIcon></NavIcon> Home
+                <NavIcon><BsHouse /></NavIcon> Home
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="/#about">
-                <i className="uil uil-user nav__icon"></i> About
+                <NavIcon><AiOutlineUser /></NavIcon> About
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="/#skills">
-                <i className="uil uil-file-alt nav__icon"></i> Skills
+                <NavIcon><MdComputer /></NavIcon> Skills
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="/#services">
-                <i className="uil uil-briefcase-alt nav__icon"></i> Services
+                <NavIcon><RiBriefcase2Line /></NavIcon> Services
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="/#portfolio">
-                <i className="uil uil-scenery nav__icon"></i> Portfolio
+                <NavIcon><BsCardImage /></NavIcon> Portfolio
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="/#contact">
-                <i className="uil uil-message nav__icon"></i> Contactme
+                <NavIcon><RiMessage3Line /></NavIcon> Contactme
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="/blog">
-                <i className="uil uil-message nav__icon"></i> Blog
+                <NavIcon><AiOutlineUser /></NavIcon> Blog
               </NavLink>
             </NavItem>
           </NavList>
-          <NavClose>
+          <NavClose onClick={() => toggleNavbar(false)}>
             <FaTimes />
           </NavClose>
         </NavMenu>
         <NavButtons>
           <ChangeTheme />
 
-          <NavToggle>
+          <NavToggle onClick={() => toggleNavbar(true)}>
             <RiAppsLine />
           </NavToggle>
         </NavButtons>
