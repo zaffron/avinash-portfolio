@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Container = styled.div`
   max-width: 768px;
@@ -8,8 +8,8 @@ export const Container = styled.div`
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-left: auto;
     margin-right: auto;
   }
-`;
+`
