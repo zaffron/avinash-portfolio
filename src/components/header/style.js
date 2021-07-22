@@ -13,7 +13,8 @@ export const Nav = styled(Container)`
 
 export const NavLogo = styled(Link)`
   columns: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
   &:hover {
     color: var(--first-color);
   }
@@ -40,7 +41,7 @@ export const NavMenu = styled.div`
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
-    ${props => props.toggled && 'bottom: 0;'};
+    ${props => props.toggled && "bottom: 0;"};
   }
 `
 
@@ -90,9 +91,12 @@ export const NavClose = styled.div`
 export const NavButtons = styled.div`
   display: flex;
   align-items: center;
+  height: 100%;
 `
 
 export const ChangeTheme = styled.div`
+  display: flex;
+  align-items: center;
   font-size: 1.25rem;
   color: var(--title-color);
   margin-right: var(--mb-1);
