@@ -3,7 +3,16 @@ import { RiSendPlane2Line } from 'react-icons/ri'
 
 import { Section } from 'components/style'
 
-import { ProjectContainer, ProjectData, ProjectBackground, ProjectButtonIcon, ProjectButton, ProjectTitle, ProjectDescription, ProjectImg } from './style'
+import {
+  ProjectContainer,
+  ProjectData,
+  ProjectBackground,
+  ProjectButtonIcon,
+  ProjectButton,
+  ProjectTitle,
+  ProjectDescription,
+  ProjectImg,
+} from './style'
 
 export default function ProjectInMind() {
   return (
@@ -11,12 +20,8 @@ export default function ProjectInMind() {
       <ProjectBackground>
         <ProjectContainer>
           <ProjectData>
-            <ProjectTitle>
-              Have a new project in mind?
-            </ProjectTitle>
-            <ProjectDescription>
-              Contact me now and get a 20% discount on your new project
-            </ProjectDescription>
+            <ProjectTitle>Have a new project in mind?</ProjectTitle>
+            <ProjectDescription>Contact me now and get a 20% discount on your new project</ProjectDescription>
             <ProjectButton href="/#contact" alt="Contact me">
               Contact Me
               <ProjectButtonIcon>

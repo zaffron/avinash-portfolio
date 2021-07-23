@@ -6,26 +6,26 @@ export const PortfolioContainer = styled(Container)`
   overflow: initial;
 
   .swiper-button-prev::after,
-  .swiper-button-next::after{
-      content: '';
+  .swiper-button-next::after {
+    content: '';
   }
 
-  .swiper-button-prev{
-      left: -.2rem;
+  .swiper-button-prev {
+    left: -0.2rem;
   }
 
-  .swiper-button-next{
-      right: -.2rem;
+  .swiper-button-next {
+    right: -0.2rem;
   }
 
-  .swiper-pagination-bullet-active{
-      border-color: var(--first-color);
+  .swiper-pagination-bullet-active {
+    border-color: var(--first-color);
   }
 
   .swiper-button-prev,
   .swiper-button-next,
-  .swiper-pagination-bullet{
-      outline: none;
+  .swiper-pagination-bullet {
+    outline: none;
   }
 `
 
@@ -75,11 +75,11 @@ export const SwiperPortfolioIcon = styled.div`
 `
 
 export const PortfolioButtonIcon = styled.div`
-font-size: 1.25rem;
-margin-left: var(--mb-0-5);
-transition: 0.3s;
-display: flex;
-align-items: center;
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
 `
 
 export const PortfolioButton = styled.a`
@@ -93,7 +93,7 @@ export const PortfolioButton = styled.a`
   &:hover {
     background-color: var(--first-color-alt);
     ${PortfolioButtonIcon} {
-      transform: translateX(.25rem);
+      transform: translateX(0.25rem);
     }
   }
 `

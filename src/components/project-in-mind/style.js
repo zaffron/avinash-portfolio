@@ -10,7 +10,7 @@ export const ProjectContainer = styled(Container)`
     text-align: left;
     grid-template-columns: repeat(2, 1fr);
   }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     background-color: var(--first-color-second);
     border-radius: 1rem;
     padding: 3rem 2.5rem 0;
@@ -22,14 +22,14 @@ export const ProjectContainer = styled(Container)`
 export const ProjectBackground = styled.div`
   background-color: var(--first-color-second);
   padding-top: 3rem;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     background: none;
   }
 `
 
 export const ProjectData = styled.div`
-  @media screen and (min-width: 768px){
-    padding-top: .8rem;
+  @media screen and (min-width: 768px) {
+    padding-top: 0.8rem;
   }
 `
 
@@ -64,15 +64,15 @@ export const ProjectButtonIcon = styled.div`
 export const ProjectButton = styled.a`
   display: inline-flex;
   align-items: center;
-  background-color: #FFF;
+  background-color: #fff;
   color: var(--first-color);
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
   &:hover {
-    background-color: #FFF;
+    background-color: #fff;
     ${ProjectButtonIcon} {
-      transform: translateX(.25rem)
+      transform: translateX(0.25rem);
     }
   }
 `

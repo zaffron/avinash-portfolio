@@ -10,6 +10,7 @@ import Qualifications from '../components/qualifications'
 import Services from '../components/services'
 import Portfolio from '../components/portfolio'
 import ProjectInMind from '../components/project-in-mind'
+import Contact from '../components/contact'
 class IndexPage extends React.Component {
   render() {
     const siteTitle = 'Gatsby Starter Personal Website'
@@ -24,6 +25,7 @@ class IndexPage extends React.Component {
         <Services />
         <Portfolio />
         <ProjectInMind />
+        <Contact />
       </Layout>
     )
   }

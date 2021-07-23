@@ -1,6 +1,6 @@
 import React from 'react'
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-import Swiper from 'react-id-swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper'
+import Swiper from 'react-id-swiper'
 import { BsArrowRightShort } from 'react-icons/bs'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
 
@@ -20,14 +20,14 @@ import {
 
 import 'swiper/swiper-bundle.min.css'
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination])
 
 export default function Portfolio() {
   const params = {
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
-      clickable: true
+      clickable: true,
     },
     loop: true,
     cssMode: true,
@@ -49,7 +49,7 @@ export default function Portfolio() {
         </SwiperPortfolioIcon>
       </div>
     ),
-    spaceBetween: 30
+    spaceBetween: 30,
   }
 
   const recentWorks = [
@@ -86,7 +86,14 @@ export default function Portfolio() {
               <PortfolioData>
                 <PortfolioTitle>{work.title}</PortfolioTitle>
                 <PortfolioDescription>{work.description}</PortfolioDescription>
-                {work.previewLink && <PortfolioButton href={work.previewLink} alt={work.title}>Preview <PortfolioButtonIcon><BsArrowRightShort /></PortfolioButtonIcon></PortfolioButton>}
+                {work.previewLink && (
+                  <PortfolioButton href={work.previewLink} alt={work.title}>
+                    Preview{' '}
+                    <PortfolioButtonIcon>
+                      <BsArrowRightShort />
+                    </PortfolioButtonIcon>
+                  </PortfolioButton>
+                )}
               </PortfolioData>
             </PortfolioContent>
           ))}
