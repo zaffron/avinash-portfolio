@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from "react"
-import { FaTimes } from "react-icons/fa"
-import { BsHouse, BsCardImage } from "react-icons/bs"
-import {
-  RiAppsLine,
-  RiBriefcase2Line,
-  RiMessage3Line,
-  RiMoonLine,
-  RiSunLine,
-} from "react-icons/ri"
-import { AiOutlineUser } from "react-icons/ai"
-import { MdComputer } from "react-icons/md"
+import React, { useEffect, useState } from 'react'
+import { FaTimes } from 'react-icons/fa'
+import { BsHouse, BsCardImage } from 'react-icons/bs'
+import { RiAppsLine, RiBriefcase2Line, RiMessage3Line, RiMoonLine, RiSunLine } from 'react-icons/ri'
+import { AiOutlineUser } from 'react-icons/ai'
+import { MdComputer } from 'react-icons/md'
 
-import { useScrollPosition } from "hooks/useScrollPosition"
+import { useScrollPosition } from 'hooks/useScrollPosition'
 
 import {
   HeaderWrapper,
@@ -26,7 +20,7 @@ import {
   NavButtons,
   ChangeTheme,
   NavToggle,
-} from "./style"
+} from './style'
 
 export default function Header() {
   const [scrollY, setScrollY] = useState(0)
@@ -55,7 +49,7 @@ export default function Header() {
               <NavLink to="/">
                 <NavIcon>
                   <BsHouse />
-                </NavIcon>{" "}
+                </NavIcon>{' '}
                 Home
               </NavLink>
             </NavItem>
@@ -63,7 +57,7 @@ export default function Header() {
               <NavLink to="/#about">
                 <NavIcon>
                   <AiOutlineUser />
-                </NavIcon>{" "}
+                </NavIcon>{' '}
                 About
               </NavLink>
             </NavItem>
@@ -71,7 +65,7 @@ export default function Header() {
               <NavLink to="/#skills">
                 <NavIcon>
                   <MdComputer />
-                </NavIcon>{" "}
+                </NavIcon>{' '}
                 Skills
               </NavLink>
             </NavItem>
@@ -79,7 +73,7 @@ export default function Header() {
               <NavLink to="/#services">
                 <NavIcon>
                   <RiBriefcase2Line />
-                </NavIcon>{" "}
+                </NavIcon>{' '}
                 Services
               </NavLink>
             </NavItem>
@@ -87,7 +81,7 @@ export default function Header() {
               <NavLink to="/#portfolio">
                 <NavIcon>
                   <BsCardImage />
-                </NavIcon>{" "}
+                </NavIcon>{' '}
                 Portfolio
               </NavLink>
             </NavItem>
@@ -95,7 +89,7 @@ export default function Header() {
               <NavLink to="/#contact">
                 <NavIcon>
                   <RiMessage3Line />
-                </NavIcon>{" "}
+                </NavIcon>{' '}
                 Contactme
               </NavLink>
             </NavItem>
@@ -103,7 +97,7 @@ export default function Header() {
               <NavLink to="/blog">
                 <NavIcon>
                   <AiOutlineUser />
-                </NavIcon>{" "}
+                </NavIcon>{' '}
                 Blog
               </NavLink>
             </NavItem>

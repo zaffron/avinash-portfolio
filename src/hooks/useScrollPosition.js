@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react"
+import { useLayoutEffect, useRef } from 'react'
 
 const isBrowser = typeof window !== `undefined`
 
@@ -8,9 +8,7 @@ const getScrollPosition = ({ element, useWindow }) => {
   const target = element ? element.current : document.body,
     position = target.getBoundingClientRect()
 
-  return useWindow
-    ? { x: window.scrollX, y: window.scrollY }
-    : { x: position.left, y: position.top }
+  return useWindow ? { x: window.scrollX, y: window.scrollY } : { x: position.left, y: position.top }
 }
 
 export const useScrollPosition = (effect, deps, element, useWindow, wait) => {

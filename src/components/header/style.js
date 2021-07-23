@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import { Link } from "gatsby"
+import styled from 'styled-components'
+import { Link } from 'gatsby'
 
-import { Container } from "components/style"
+import { Container } from 'components/style'
 
 export const Nav = styled(Container)`
   max-width: 968px;
@@ -41,7 +41,7 @@ export const NavMenu = styled.div`
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
-    ${props => props.toggled && "bottom: 0;"};
+    ${props => props.toggled && 'bottom: 0;'};
   }
 `
 
@@ -110,7 +110,7 @@ export const HeaderWrapper = styled.header`
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
-  ${props => props.scrolled && "box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);"};
+  ${props => props.scrolled && 'box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);'};
   @media screen and (min-width: 1024px) {
     padding: 0;
   }

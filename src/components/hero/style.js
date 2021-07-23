@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import { Link } from "gatsby"
+import styled from 'styled-components'
+import { Link } from 'gatsby'
 
-import { Container, Button } from "components/style"
+import { Container, Button } from 'components/style'
 
 export const HomeContent = styled.div`
   display: grid;
@@ -25,7 +25,7 @@ export const HomeSocialIcon = styled.a`
   }
 `
 
-export const HomeImg = styled.div``;
+export const HomeImg = styled.div``
 
 export const HomeBlob = styled.svg`
   width: 200px;
@@ -45,7 +45,7 @@ export const HomeTitle = styled.h1`
   margin: 0;
 `
 
-export const HomeSubtitle = styled.div`
+export const HomeSubtitle = styled.span`
   font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
@@ -81,7 +81,7 @@ export const ContactButtonIcon = styled.div`
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
-`;
+`
 
 export const ButtonLink = styled(Link)`
   text-decoration: none;
@@ -123,7 +123,7 @@ export const HomeContainer = styled(Container)`
     }
   }
 
-  @media screen and (min-width: 568px){
+  @media screen and (min-width: 568px) {
     ${HomeContent} {
       grid-template-columns: max-content 1fr 1fr;
     }
@@ -136,7 +136,7 @@ export const HomeContainer = styled(Container)`
     }
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     row-gap: 5rem;
     ${HomeContent} {
       padding-top: 5.5rem;

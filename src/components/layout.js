@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-import Header from "./header"
+import Header from './header'
 import { Main } from './style'
 
 class Layout extends React.Component {

@@ -19,30 +19,33 @@ export const Container = styled.div`
 `
 
 export const Main = styled.main`
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding: 0 1rem;
   }
   @media screen and (min-width: 1024px) {
     padding: 0;
   }
-`;
+`
 
 export const Section = styled.section`
   padding: 2rem 0 4rem;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding: 8rem 0 6rem;
   }
 `
 
 export const SectionTitle = styled.h1`
   font-size: var(--h1-font-size);
+  margin: 0;
   text-align: center;
 `
 
-export const SectionSubTitle = styled.span`
-  font-size: var(--h1-font-size);
+export const SectionSubtitle = styled.span`
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
   text-align: center;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-bottom: 4rem;
   }
 `

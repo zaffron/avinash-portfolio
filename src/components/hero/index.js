@@ -1,6 +1,6 @@
 import React from 'react'
-import { RiSendPlane2Line, RiMouseLine } from 'react-icons/ri';
-import { MdArrowDownward } from 'react-icons/md';
+import { RiSendPlane2Line, RiMouseLine } from 'react-icons/ri'
+import { MdArrowDownward } from 'react-icons/md'
 
 import { Section } from 'components/style'
 
