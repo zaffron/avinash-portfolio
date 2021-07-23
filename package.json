@@ -37,6 +37,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-icons": "^4.2.0",
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
     "react-use-flexsearch": "^0.1.1",
@@ -48,9 +49,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "gatsby-cli": "^2.12.66",
-    "gatsby-plugin-root-import": "^2.0.5",
-    "prettier": "^1.17.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.0",
@@ -60,7 +58,10 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0"
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "gatsby-cli": "^2.12.66",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "prettier": "^1.17.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [

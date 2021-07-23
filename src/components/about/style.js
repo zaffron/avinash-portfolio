@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
-import { Container, Button } from 'components/style'
+import { Container } from 'components/style'
 
 export const AboutContainer = styled(Container)`
   display: grid;
@@ -63,7 +62,7 @@ export const AboutInfoTitleName = styled.span`
 
 export const AboutInfoLink = styled.a`
   text-decoration: none;
-`;
+`
 
 export const AboutInfoButtons = styled.span`
   display: flex;
@@ -78,4 +77,4 @@ export const AboutInfoButtonIcon = styled.div`
   margin-left: 0.5rem;
   display: flex;
   align-items: center;
-`;
+`

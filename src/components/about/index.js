@@ -51,7 +51,9 @@ export default function About() {
           <AboutInfoLink download href="assets/pdf/cv.pdf">
             <Button variant="flex">
               Download CV
-              <AboutInfoButtonIcon><RiDownloadCloud2Line /></AboutInfoButtonIcon>
+              <AboutInfoButtonIcon>
+                <RiDownloadCloud2Line />
+              </AboutInfoButtonIcon>
             </Button>
           </AboutInfoLink>
         </AboutInfoButtons>

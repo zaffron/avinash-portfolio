@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import Hero from '../components/hero'
 import About from '../components/about'
+import Skills from '../components/skills'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -17,6 +18,7 @@ class IndexPage extends React.Component {
         <SEO title="Home" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
         <Hero />
         <About />
+        <Skills />
         <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
         <h1>
           Hey people{' '}
