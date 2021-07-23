@@ -8,6 +8,7 @@ import Skills from '../components/skills'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Button from '../components/button'
+import Qualifications from '../components/qualifications'
 
 class IndexPage extends React.Component {
   render() {
@@ -19,6 +20,7 @@ class IndexPage extends React.Component {
         <Hero />
         <About />
         <Skills />
+        <Qualifications />
         <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
         <h1>
           Hey people{' '}

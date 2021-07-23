@@ -69,7 +69,7 @@ export const SkillPercentage = styled.span`
   border-radius: 0.25rem;
   display: block;
   background-color: var(--first-color);
-  width: ${props => props.width ? props.width : '100%'};
+  width: ${props => (props.width ? props.width : '100%')};
 `
 
 export const SkilSetlWrapper = styled.div`

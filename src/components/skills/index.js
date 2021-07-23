@@ -116,7 +116,7 @@ export default function Skills() {
         {skillSets.map(skillSet => (
           <SkillSet key={skillSet.id} skillSet={skillSet} />
         ))}
-    </SkillsContainer>
+      </SkillsContainer>
     </Section>
   )
 }
