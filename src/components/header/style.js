@@ -111,9 +111,13 @@ export const HeaderWrapper = styled.header`
   z-index: var(--z-fixed);
   background-color: var(--body-color);
   ${props => props.scrolled && "box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);"};
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
   @media screen and (min-width: 768px){
     top: 0;
     bottom: initial;
+    padding: 0 1rem;
     ${Nav} {
       height: calc(var(--header-height) + 1.5rem);
       column-gap: 1rem;
