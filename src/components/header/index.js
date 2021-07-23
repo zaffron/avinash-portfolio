@@ -90,7 +90,7 @@ export default function Header() {
                 <NavIcon>
                   <RiMessage3Line />
                 </NavIcon>{' '}
-                Contactme
+                Contact Me
               </NavLink>
             </NavItem>
             <NavItem>

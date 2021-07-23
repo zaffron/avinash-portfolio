@@ -1,12 +1,14 @@
+const config = require('./src/config');
+
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Avinash Rijal Personal Blog & Portfolio`,
+    title: `Avinash Rijal - Personal Blog & Portfolio`,
     author: `Avinash Rijal`,
-    description: `A personal blog with styled components, dark mode, and Netlify CMS.`,
+    description: `Hi! I am Avinash Rijal. A Full stack web developer and DevOps Engineer from Nepal.`,
     siteUrl: `https://avinashrijal.netlify.com/`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `avinashrijal`,
     },
   },
   plugins: [
@@ -59,6 +61,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-feed-mdx`,
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: config.googleAnalyticsID,
+        head: true,
+      },
+    },
     `gatsby-plugin-root-import`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -72,6 +81,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets`,
       },
     },
     {
@@ -112,16 +128,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Avinash Rijal Blog`,
-        short_name: `Avinash Rijal`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        // edit below
-        icon: `content/assets/avinash-icon.png`,
+        name: config.defaultTitle,
+        short_name: 'starter',
+        start_url: '/',
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: 'minimal-ui',
+        icon: './static/favicon.ico',
       },
     },
     {

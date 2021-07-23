@@ -25,6 +25,8 @@ export const NavToggle = styled.div`
   font-weight: var(--font-medium);
   font-size: 1.1rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
   &:hover {
     color: var(--first-color);
   }

@@ -15,6 +15,9 @@ export const HomeSocial = styled.div`
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
+  @media screen and (min-width: 1024px) {
+    transform: translateX(-6rem);
+  }
 `
 
 export const HomeSocialIcon = styled.a`
@@ -38,6 +41,11 @@ export const HomeBlobImage = styled.image`
 
 export const HomeData = styled.div`
   grid-column: 1/3;
+
+  @media screen and (min-width: 350px) {
+    text-align: center;
+    margin-top: 2rem;
+  }
 `
 
 export const HomeTitle = styled.h1`

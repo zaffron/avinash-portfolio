@@ -1,6 +1,8 @@
 import React from 'react'
-import { RiSendPlane2Line, RiMouseLine } from 'react-icons/ri'
+import { RiSendPlane2Line, RiMouseLine, RiLinkedinFill } from 'react-icons/ri'
 import { MdArrowDownward } from 'react-icons/md'
+import { FaFacebookF } from 'react-icons/fa'
+import { FiGithub } from 'react-icons/fi'
 
 import { Section } from 'components/style'
 
@@ -32,14 +34,14 @@ export default function Hero() {
       <HomeContainer>
         <HomeContent>
           <HomeSocial>
-            <HomeSocialIcon href="" targe="_blank">
-              <i className="uil uil-linkedin-alt" />
+            <HomeSocialIcon href="https://www.linkedin.com/in/dev-avinash-rijal/" targe="_blank">
+              <RiLinkedinFill />
             </HomeSocialIcon>
-            <HomeSocialIcon href="" targe="_blank">
-              <i className="uil uil-dribbble" />
+            <HomeSocialIcon href="https://www.facebook.com/avlas.rijal" targe="_blank">
+              <FaFacebookF />
             </HomeSocialIcon>
-            <HomeSocialIcon href="" targe="_blank">
-              <i className="uil uil-github-alt" />
+            <HomeSocialIcon href="https://www.github.com/zaffron" targe="_blank">
+              <FiGithub />
             </HomeSocialIcon>
           </HomeSocial>
           <HomeImg>
