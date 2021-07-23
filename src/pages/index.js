@@ -10,7 +10,7 @@ import SEO from '../components/seo'
 import Button from '../components/button'
 import Qualifications from '../components/qualifications'
 import Services from '../components/services'
-
+import Portfolio from '../components/portfolio'
 class IndexPage extends React.Component {
   render() {
     const siteTitle = 'Gatsby Starter Personal Website'
@@ -23,6 +23,7 @@ class IndexPage extends React.Component {
         <Skills />
         <Qualifications />
         <Services />
+        <Portfolio />
         <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
         <h1>
           Hey people{' '}

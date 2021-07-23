@@ -81,7 +81,7 @@ export default function Services() {
     const { icon, title } = content
 
     return (
-      <ServiceContent>
+      <ServiceContent key={key}>
         <div>
           <ServiceIcon>
             {icon}
@@ -100,14 +100,12 @@ export default function Services() {
 
   const renderServiceModal = () => {
     if (selectedService) {
-      const { title, data } = selectedService;
+      const { title, data } = selectedService
 
       return (
         <ServiceModal open={selectedService !== null}>
           <ServiceModalContent>
-            <ServiceModalTitle>
-              {title}
-            </ServiceModalTitle>
+            <ServiceModalTitle>{title}</ServiceModalTitle>
             <ServiceModalCloseIcon onClick={() => setSelectedService(null)}>
               <TiTimes />
             </ServiceModalCloseIcon>
@@ -127,9 +125,7 @@ export default function Services() {
       )
     }
 
-    return (
-      <ServiceModal></ServiceModal>
-    )
+    return <ServiceModal></ServiceModal>
   }
 
   return (

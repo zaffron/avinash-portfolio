@@ -106,7 +106,6 @@ export const ServiceModal = styled.div`
   `}
 `
 
-
 export const ServiceModalTitle = styled.h4`
   font-size: var(--h4-font-size);
   font-weight: var(--font-semi-bold);
@@ -126,6 +125,7 @@ export const ServiceModalServices = styled.ul`
   display: grid;
   gap: 1.5rem;
   row-gap: 1rem;
+  margin: 0;
 `
 
 export const ServiceModalService = styled.li`
