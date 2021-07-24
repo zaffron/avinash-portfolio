@@ -1,6 +1,7 @@
 backend:
   name: github
-  repo: zaffron/avinash-portfolio.git
+  repo: zaffron/avinash-portfolio
+  branch: master
 
 media_folder: content/assets
 public_folder: ../assets
