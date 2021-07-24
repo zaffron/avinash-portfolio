@@ -13,8 +13,14 @@ const Layout = (props) => {
       <Main>{children}</Main>
       <Footer>
         © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <span style={{ margin: '0 10px' }}>❤️</span>by {' '}
+        <a href="https://avinashrijal.com.np/">Avinash Rijal</a>
+        <br />Powered by
+        {' '}
+        <a target="_blank" href="https://www.gatsbyjs.org" rel="noreferrer">Gatsby</a>
+        <br />Hosted & used CMS by
+        {' '}
+        <a target="_blank" href="https://www.netlify.com" rel="noreferrer">Netlify</a>
       </Footer>
     </Wrapper>
   );
@@ -27,6 +33,7 @@ const Wrapper = styled.div`
 const Footer = styled.footer`
   text-align: center;
   margin: 24px;
+  padding-bottom: 42px;
 `;
 
 export default Layout;

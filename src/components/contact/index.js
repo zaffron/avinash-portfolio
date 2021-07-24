@@ -17,7 +17,7 @@ import {
 
 export default function Contact() {
   return (
-    <Section>
+    <Section id="contact">
       <SectionTitle>Contact Me</SectionTitle>
       <SectionSubtitle>Get in touch</SectionSubtitle>
 
