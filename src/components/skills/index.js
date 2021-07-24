@@ -1,12 +1,12 @@
-import React from 'react'
-import { BiCodeCurly, BiServer } from 'react-icons/bi'
-import { AiOutlineAntDesign } from 'react-icons/ai'
-import { SiAzuredevops } from 'react-icons/si'
+import React from 'react';
+import { BiCodeCurly, BiServer } from 'react-icons/bi';
+import { AiOutlineAntDesign } from 'react-icons/ai';
+import { SiAzuredevops } from 'react-icons/si';
 
-import { Section, SectionTitle, SectionSubtitle } from 'components/style'
-import SkillSet from 'components/skill-set'
+import { Section, SectionTitle, SectionSubtitle } from 'components/style';
+import SkillSet from 'components/skill-set';
 
-import { SkillsContainer } from './style'
+import { SkillsContainer } from './style';
 
 export default function Skills() {
   const skillSets = [
@@ -106,17 +106,17 @@ export default function Skills() {
         },
       ],
     },
-  ]
+  ];
 
   return (
     <Section id="skills">
       <SectionTitle>Skills</SectionTitle>
       <SectionSubtitle>My technical level</SectionSubtitle>
       <SkillsContainer>
-        {skillSets.map(skillSet => (
+        {skillSets.map((skillSet) => (
           <SkillSet key={skillSet.id} skillSet={skillSet} />
         ))}
       </SkillsContainer>
     </Section>
-  )
+  );
 }

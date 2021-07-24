@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { Link } from 'gatsby'
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
-import { Container } from 'components/style'
+import { Container } from 'components/style';
 
 export const Nav = styled(Container)`
   max-width: 968px;
@@ -9,7 +9,7 @@ export const Nav = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 export const NavLogo = styled(Link)`
   columns: var(--title-color);
@@ -18,7 +18,7 @@ export const NavLogo = styled(Link)`
   &:hover {
     color: var(--first-color);
   }
-`
+`;
 
 export const NavToggle = styled.div`
   columns: var(--title-color);
@@ -30,7 +30,7 @@ export const NavToggle = styled.div`
   &:hover {
     color: var(--first-color);
   }
-`
+`;
 
 export const NavMenu = styled.div`
   @media screen and (max-width: 767px) {
@@ -43,9 +43,9 @@ export const NavMenu = styled.div`
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
-    ${props => props.toggled && 'bottom: 0;'};
+    ${(props) => props.toggled && 'bottom: 0;'};
   }
-`
+`;
 
 export const NavList = styled.ul`
   display: grid;
@@ -53,14 +53,14 @@ export const NavList = styled.ul`
   gap: 2rem;
   list-style: none;
   margin: 0;
-`
+`;
 
 export const NavItem = styled.li`
   display: grid;
   align-items: center;
   margin: 0;
   height: 100%;
-`
+`;
 
 export const NavLink = styled(Link)`
   display: flex;
@@ -72,11 +72,11 @@ export const NavLink = styled(Link)`
   &:hover {
     color: var(--first-color);
   }
-`
+`;
 
 export const NavIcon = styled.div`
   font-size: 1.2rem;
-`
+`;
 
 export const NavClose = styled.div`
   position: absolute;
@@ -88,13 +88,13 @@ export const NavClose = styled.div`
   &:hover {
     color: var(--first-color-alt);
   }
-`
+`;
 
 export const NavButtons = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
-`
+`;
 
 export const ChangeTheme = styled.div`
   display: flex;
@@ -103,7 +103,7 @@ export const ChangeTheme = styled.div`
   color: var(--title-color);
   margin-right: var(--mb-1);
   cursor: pointer;
-`
+`;
 
 export const HeaderWrapper = styled.header`
   width: 100%;
@@ -112,11 +112,11 @@ export const HeaderWrapper = styled.header`
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
-  ${props => props.scrolled && 'box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);'};
+  ${(props) => props.scrolled && 'box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);'};
   @media screen and (min-width: 1024px) {
     padding: 0;
   }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     top: 0;
     bottom: initial;
     padding: 0 1rem;
@@ -135,4 +135,4 @@ export const HeaderWrapper = styled.header`
       margin-left: auto;
     }
   }
-`
+`;

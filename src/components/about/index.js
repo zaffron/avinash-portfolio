@@ -1,7 +1,7 @@
-import React from 'react'
-import { RiDownloadCloud2Line } from 'react-icons/ri'
+import React from 'react';
+import { RiDownloadCloud2Line } from 'react-icons/ri';
 
-import { Section, SectionTitle, SectionSubtitle, Button } from 'components/style'
+import { Section, SectionTitle, SectionSubtitle, Button } from 'components/style';
 
 import {
   AboutContainer,
@@ -13,7 +13,7 @@ import {
   AboutInfoButtonIcon,
   AboutInfoLink,
   AboutInfoButtons,
-} from './style'
+} from './style';
 
 export default function About() {
   return (
@@ -59,5 +59,5 @@ export default function About() {
         </AboutInfoButtons>
       </AboutContainer>
     </Section>
-  )
+  );
 }

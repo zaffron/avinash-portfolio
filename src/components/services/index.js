@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { BsGrid1X2Fill, BsArrowRightShort } from 'react-icons/bs'
-import { IoLaptopSharp } from 'react-icons/io5'
-import { FaServer } from 'react-icons/fa'
-import { TiTimes } from 'react-icons/ti'
-import { CgCheckO } from 'react-icons/cg'
+import React, { useState } from 'react';
+import { BsGrid1X2Fill, BsArrowRightShort } from 'react-icons/bs';
+import { IoLaptopSharp } from 'react-icons/io5';
+import { FaServer } from 'react-icons/fa';
+import { TiTimes } from 'react-icons/ti';
+import { CgCheckO } from 'react-icons/cg';
 
-import { Section, SectionTitle, SectionSubtitle } from 'components/style'
+import { Section, SectionTitle, SectionSubtitle } from 'components/style';
 
 import {
   ServicesContainer,
@@ -21,10 +21,10 @@ import {
   ServiceModalCloseIcon,
   ServiceModalService,
   ServiceModalIcon,
-} from './style'
+} from './style';
 
 export default function Services() {
-  const [selectedService, setSelectedService] = useState(null)
+  const [selectedService, setSelectedService] = useState(null);
 
   const services = [
     {
@@ -75,10 +75,10 @@ export default function Services() {
         'Moder event driven services',
       ],
     },
-  ]
+  ];
 
   const renderContent = (content, key) => {
-    const { icon, title } = content
+    const { icon, title } = content;
 
     return (
       <ServiceContent key={key}>
@@ -95,12 +95,12 @@ export default function Services() {
           </ServiceButtonIcon>
         </ServiceButton>
       </ServiceContent>
-    )
-  }
+    );
+  };
 
   const renderServiceModal = () => {
     if (selectedService) {
-      const { title, data } = selectedService
+      const { title, data } = selectedService;
 
       return (
         <ServiceModal open={selectedService !== null}>
@@ -111,8 +111,8 @@ export default function Services() {
             </ServiceModalCloseIcon>
 
             <ServiceModalServices>
-              {data.map((datum, key) => (
-                <ServiceModalService key={key}>
+              {data.map((datum) => (
+                <ServiceModalService key={data}>
                   <ServiceModalIcon>
                     <CgCheckO />
                   </ServiceModalIcon>
@@ -122,11 +122,11 @@ export default function Services() {
             </ServiceModalServices>
           </ServiceModalContent>
         </ServiceModal>
-      )
+      );
     }
 
-    return <ServiceModal></ServiceModal>
-  }
+    return <ServiceModal />;
+  };
 
   return (
     <Section id="services">
@@ -136,5 +136,5 @@ export default function Services() {
       <ServicesContainer>{services.map((service, index) => renderContent(service, index))}</ServicesContainer>
       {renderServiceModal()}
     </Section>
-  )
+  );
 }

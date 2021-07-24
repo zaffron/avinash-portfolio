@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { HiOutlineAcademicCap, HiOutlineBriefcase } from 'react-icons/hi'
-import { BiCalendar } from 'react-icons/bi'
+import React, { useState } from 'react';
+import { HiOutlineAcademicCap, HiOutlineBriefcase } from 'react-icons/hi';
+import { BiCalendar } from 'react-icons/bi';
 
-import { Container, Section, SectionTitle, SectionSubtitle } from 'components/style'
+import { Container, Section, SectionTitle, SectionSubtitle } from 'components/style';
 
 import {
   QualificationTabs,
@@ -16,10 +16,10 @@ import {
   QualificationCalendar,
   QualificationRounder,
   QualificationLine,
-} from './style'
+} from './style';
 
 export default function Qualifications() {
-  const [activeTabIndex, setActiveTabIndex] = useState(0)
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
 
   const educationQualifications = [
     {
@@ -34,7 +34,7 @@ export default function Qualifications() {
       time: '2015-2018',
       last: true,
     },
-  ]
+  ];
 
   const workQualifications = [
     {
@@ -55,17 +55,17 @@ export default function Qualifications() {
       time: '2018 - Present',
       last: true,
     },
-  ]
+  ];
 
   const renderQualificationContent = (qualificationContent, key) => {
-    const { title, subtitle, time, last } = qualificationContent
-    const even = key % 2 !== 0
+    const { title, subtitle, time, last } = qualificationContent;
+    const even = key % 2 !== 0;
 
     return (
       <QualificationData key={key}>
         {even && (
           <>
-            <div></div>
+            <div />
             <div>
               <QualificationRounder />
               {!last && <QualificationLine />}
@@ -87,8 +87,8 @@ export default function Qualifications() {
           </div>
         )}
       </QualificationData>
-    )
-  }
+    );
+  };
 
   return (
     <Section id="qualifications">
@@ -120,5 +120,5 @@ export default function Qualifications() {
         </QualificationSections>
       </Container>
     </Section>
-  )
+  );
 }

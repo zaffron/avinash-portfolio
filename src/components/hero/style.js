@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { Link } from 'gatsby'
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
-import { Container, Button } from 'components/style'
+import { Container, Button } from 'components/style';
 
 export const HomeContent = styled.div`
   display: grid;
@@ -9,7 +9,7 @@ export const HomeContent = styled.div`
   grid-template-columns: 0.5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
-`
+`;
 
 export const HomeSocial = styled.div`
   display: grid;
@@ -18,7 +18,7 @@ export const HomeSocial = styled.div`
   @media screen and (min-width: 1024px) {
     transform: translateX(-6rem);
   }
-`
+`;
 
 export const HomeSocialIcon = styled.a`
   font-size: 1.25rem;
@@ -26,18 +26,18 @@ export const HomeSocialIcon = styled.a`
   &:hover {
     color: var(--first-color-alt);
   }
-`
+`;
 
-export const HomeImg = styled.div``
+export const HomeImg = styled.div``;
 
 export const HomeBlob = styled.svg`
   width: 200px;
   fill: var(--first-color);
-`
+`;
 
 export const HomeBlobImage = styled.image`
   width: 170px;
-`
+`;
 
 export const HomeData = styled.div`
   grid-column: 1/3;
@@ -46,12 +46,12 @@ export const HomeData = styled.div`
     text-align: center;
     margin-top: 2rem;
   }
-`
+`;
 
 export const HomeTitle = styled.h1`
   font-size: var(--h3-font-size);
   margin: 0;
-`
+`;
 
 export const HomeSubtitle = styled.span`
   font-size: var(--h3-font-size);
@@ -59,15 +59,15 @@ export const HomeSubtitle = styled.span`
   font-weight: var(--font-medium);
   margin: 0;
   margin-bottom: var(--mb-0-75);
-`
+`;
 
 export const HomeDescription = styled.p`
   margin-bottom: var(--mb-2);
-`
+`;
 
 export const HomeScroll = styled.div`
   display: none;
-`
+`;
 
 export const HomeScrollButton = styled.a`
   columns: var(--first-color);
@@ -77,11 +77,11 @@ export const HomeScrollButton = styled.a`
   &:hover {
     transform: translateY(0.25rem);
   }
-`
+`;
 
 export const ContactButton = styled(Button)`
   cursor: pointer;
-`
+`;
 
 export const ContactButtonIcon = styled.div`
   display: flex;
@@ -89,18 +89,18 @@ export const ContactButtonIcon = styled.div`
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
-`
+`;
 
 export const ButtonLink = styled(Link)`
   text-decoration: none;
-`
+`;
 
 export const HomeScrollMouseIcon = styled.div`
   display: flex;
   align-items: center;
   color: var(--first-color);
   font-size: 2rem;
-`
+`;
 
 export const HomeScrollName = styled.span`
   font-size: var(--small-font-size);
@@ -108,14 +108,14 @@ export const HomeScrollName = styled.span`
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
   margin-left: var(--mb-0-25);
-`
+`;
 
 export const HomeScrollArrowIcon = styled.div`
   color: var(--first-color);
   display: flex;
   align-items: center;
   font-size: 1.25rem;
-`
+`;
 
 export const HomeContainer = styled(Container)`
   display: grid;
@@ -163,4 +163,4 @@ export const HomeContainer = styled(Container)`
       display: block;
     }
   }
-`
+`;

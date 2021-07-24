@@ -1,10 +1,10 @@
-import React from 'react'
-import { RiSendPlane2Line, RiMouseLine, RiLinkedinFill } from 'react-icons/ri'
-import { MdArrowDownward } from 'react-icons/md'
-import { FaFacebookF } from 'react-icons/fa'
-import { FiGithub } from 'react-icons/fi'
+import React from 'react';
+import { RiSendPlane2Line, RiMouseLine, RiLinkedinFill } from 'react-icons/ri';
+import { MdArrowDownward } from 'react-icons/md';
+import { FaFacebookF } from 'react-icons/fa';
+import { FiGithub } from 'react-icons/fi';
 
-import { Section } from 'components/style'
+import { Section } from 'components/style';
 
 import {
   HomeContainer,
@@ -26,7 +26,7 @@ import {
   HomeImg,
   HomeScrollArrowIcon,
   ContactButton,
-} from './style'
+} from './style';
 
 export default function Hero() {
   return (
@@ -98,5 +98,5 @@ export default function Hero() {
         </HomeScroll>
       </HomeContainer>
     </Section>
-  )
+  );
 }

@@ -1,10 +1,10 @@
-import React from 'react'
-import { FiPhone } from 'react-icons/fi'
-import { HiOutlineMail } from 'react-icons/hi'
-import { GoLocation } from 'react-icons/go'
+import React from 'react';
+import { FiPhone } from 'react-icons/fi';
+import { HiOutlineMail } from 'react-icons/hi';
+import { GoLocation } from 'react-icons/go';
 
-import { Section, SectionTitle, SectionSubtitle } from 'components/style'
-import ContactForm from '../contact-form'
+import { Section, SectionTitle, SectionSubtitle } from 'components/style';
+import ContactForm from '../contact-form';
 
 import {
   ContactContainer,
@@ -13,7 +13,7 @@ import {
   ContactInformationIcon,
   ContactInformationTitle,
   ContactInformationSubtitle,
-} from './style'
+} from './style';
 
 export default function Contact() {
   return (
@@ -56,5 +56,5 @@ export default function Contact() {
         <ContactForm />
       </ContactContainer>
     </Section>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-const config = require('./src/config');
+const config = require('./src/config')
 
 module.exports = {
   siteMetadata: {
@@ -6,7 +6,7 @@ module.exports = {
     title: `Avinash Rijal - Personal Blog & Portfolio`,
     author: `Avinash Rijal`,
     description: `Hi! I am Avinash Rijal. A Full stack web developer and DevOps Engineer from Nepal.`,
-    siteUrl: `https://avinashrijal.netlify.com/`,
+    siteUrl: `https://avinashrijal.com.np/`,
     social: {
       twitter: `avinashrijal`,
     },
@@ -14,18 +14,20 @@ module.exports = {
   plugins: [
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
-      resolve: "gatsby-plugin-local-search",
+      resolve: 'gatsby-plugin-local-search',
       options: {
-        name: "blog",
-        engine: "flexsearch",
+        name: 'blog',
+        engine: 'flexsearch',
         engineOptions: {
-          encode: "icase",
-          tokenize: "forward",
+          encode: 'icase',
+          tokenize: 'forward',
           async: false,
         },
         query: `
@@ -45,11 +47,11 @@ module.exports = {
             }
           }
         `,
-        ref: "id",
-        index: ["title", "rawBody"],
-        store: ["id", "slug", "date", "title", "excerpt", "description"],
+        ref: 'id',
+        index: ['title', 'rawBody'],
+        store: ['id', 'slug', 'date', 'title', 'excerpt', 'description'],
         normalizer: ({ data }) =>
-          data.allMdx.nodes.map(node => ({
+          data.allMdx.nodes.map((node) => ({
             id: node.id,
             slug: node.fields.slug,
             rawBody: node.rawBody,
@@ -84,6 +86,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/site-content`,
+        name: 'site-content',
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -93,7 +102,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [".mdx", ".md"],
+        extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -121,22 +130,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `Avinash Rijal Blog`,
+        short_name: `Avinash Rijal`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
         // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: config.defaultTitle,
-        short_name: 'starter',
-        start_url: '/',
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: 'minimal-ui',
-        icon: './static/favicon.ico',
+        icon: `content/assets/avinash-icon.png`,
       },
     },
     {

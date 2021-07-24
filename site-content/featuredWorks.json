@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Studytweaks",
+    "description": "A personal site I build to contribute to open source learning platform",
+    "url": "https://studytweaks.com",
+    "image": "../src/assets/images/project-thumbnails/studytweaks.png",
+    "technologyUsed": [
+      "React",
+      "SSR",
+      "Gatsby",
+      "Algolia",
+      "SASS",
+      "Wordpress API",
+      "GraphQL"
+    ]
+  },
+  {
+    "name": "Hiboo",
+    "description": "Collect, standardize, and activate your equipment data to run your worksites, inventory, maintenance and more. ",
+    "url": "https://hiboo.io",
+    "image": "../src/assets/images/project-thumbnails/hiboo.png",
+    "technologyUsed": [
+      "React",
+      "SSR",
+      "Gatsby",
+      "Algolia",
+      "SASS",
+      "Wordpress API",
+      "GraphQL"
+    ]
+  },
+  {
+    "name": "Dzango",
+    "description": "Your dedicated team of developers working exclusively for you. Dzango is an outsourcing company based on France/Thailand/UK. Currently operating from Nepal",
+    "url": "https://dzango.com/",
+    "image": "../src/assets/images/project-thumbnails/dzango.png",
+    "technologyUsed": []
+  },
+  {
+    "name": "PTE App",
+    "description": "An app for Pearson Test of English(PTE) academic test. It reviews basic reading, writing, listening and speaking practices and concepts using this extensive study guide.",
+    "url": "",
+    "image": "../src/assets/images/project-thumbnails/pte.png",
+    "technologyUsed": ["VueJS", "Larvel"]
+  },
+  {
+    "name": "Dzango admin panel",
+    "description": "An all-in-one management system specifically for dzango tech accelerator organization. It manages employee attendances, reveiws, events, customers data, employee history and many more.",
+    "url": "",
+    "image": "../src/assets/images/project-thumbnails/dzango-admin.png",
+    "technologyUsed": ["VueJS", "Larvel"]
+  }
+]

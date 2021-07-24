@@ -31,4 +31,4 @@ module.exports = {
   },
   foundingDate: '2019',
   recaptchaKey: '6LdJS9IUAAAAAIDYZfbgQqcm17a05jgn1i_cfu_m',
-}
+};

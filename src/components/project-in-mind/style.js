@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { Container } from 'components/style'
+import { Container } from 'components/style';
 
 export const ProjectContainer = styled(Container)`
   display: grid;
@@ -17,7 +17,7 @@ export const ProjectContainer = styled(Container)`
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
   }
-`
+`;
 
 export const ProjectBackground = styled.div`
   background-color: var(--first-color-second);
@@ -25,25 +25,25 @@ export const ProjectBackground = styled.div`
   @media screen and (min-width: 768px) {
     background: none;
   }
-`
+`;
 
 export const ProjectData = styled.div`
   @media screen and (min-width: 768px) {
     padding-top: 0.8rem;
   }
-`
+`;
 
 export const ProjectTitle = styled.h2`
   font-size: var(--h2-font-size);
   margin: 0;
   margin-bottom: var(--mb-0-75);
   color: #fff;
-`
+`;
 
 export const ProjectDescription = styled.p`
   margin-bottom: var(--mb-1-5);
   color: #fff;
-`
+`;
 
 export const ProjectImg = styled.img`
   width: 232px;
@@ -51,7 +51,7 @@ export const ProjectImg = styled.img`
   @media screen and (max-width: 350px) {
     width: 200px;
   }
-`
+`;
 
 export const ProjectButtonIcon = styled.div`
   font-size: 1.25rem;
@@ -59,7 +59,7 @@ export const ProjectButtonIcon = styled.div`
   transition: 0.3s;
   display: flex;
   align-items: center;
-`
+`;
 
 export const ProjectButton = styled.a`
   display: inline-flex;
@@ -75,4 +75,4 @@ export const ProjectButton = styled.a`
       transform: translateX(0.25rem);
     }
   }
-`
+`;

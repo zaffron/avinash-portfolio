@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { Container } from 'components/style'
+import { Container } from 'components/style';
 
 export const SkillsContainer = styled(Container)`
   display: grid;
@@ -9,4 +9,4 @@ export const SkillsContainer = styled(Container)`
   @media screen and (min-width: 568px) {
     grid-template-columns: repeat(2, 1fr);
   }
-`
+`;

@@ -1,7 +1,7 @@
-import React from 'react'
-import { RiSendPlane2Line } from 'react-icons/ri'
+import React from 'react';
+import { RiSendPlane2Line } from 'react-icons/ri';
 
-import { Section } from 'components/style'
+import { Section } from 'components/style';
 
 import {
   ProjectContainer,
@@ -12,7 +12,7 @@ import {
   ProjectTitle,
   ProjectDescription,
   ProjectImg,
-} from './style'
+} from './style';
 
 export default function ProjectInMind() {
   return (
@@ -34,5 +34,5 @@ export default function ProjectInMind() {
         </ProjectContainer>
       </ProjectBackground>
     </Section>
-  )
+  );
 }

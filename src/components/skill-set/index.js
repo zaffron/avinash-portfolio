@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-import { HiChevronUp } from 'react-icons/hi'
+import { HiChevronUp } from 'react-icons/hi';
 
 import {
   SkilSetlWrapper,
@@ -16,29 +16,27 @@ import {
   SkillTitle,
   SkillNumber,
   SkillList,
-} from './style'
+} from './style';
 
 export default function SkillSet({ skillSet }) {
-  const { icon, title, subtitle, data } = skillSet
-  const [isOpen, setIsOpen] = useState(false)
+  const { icon, title, subtitle, data } = skillSet;
+  const [isOpen, setIsOpen] = useState(false);
 
-  const showSkillSetData = () => {
-    return (
-      <SkillList>
-        {data.map((skillData, index) => (
-          <SkillData key={index}>
-            <SkillTitle>
-              <SkillName>{skillData.name}</SkillName>
-              <SkillNumber>{skillData.number}</SkillNumber>
-            </SkillTitle>
-            <SkillBar>
-              <SkillPercentage width={skillData.number} />
-            </SkillBar>
-          </SkillData>
-        ))}
-      </SkillList>
-    )
-  }
+  const showSkillSetData = () => (
+    <SkillList>
+      {data.map((skillData) => (
+        <SkillData key={skillData.name}>
+          <SkillTitle>
+            <SkillName>{skillData.name}</SkillName>
+            <SkillNumber>{skillData.number}</SkillNumber>
+          </SkillTitle>
+          <SkillBar>
+            <SkillPercentage width={skillData.number} />
+          </SkillBar>
+        </SkillData>
+      ))}
+    </SkillList>
+  );
 
   return (
     <SkilSetlWrapper open={isOpen}>
@@ -54,5 +52,5 @@ export default function SkillSet({ skillSet }) {
       </SkilSetHeader>
       {showSkillSetData()}
     </SkilSetlWrapper>
-  )
+  );
 }

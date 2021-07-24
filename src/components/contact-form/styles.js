@@ -1,18 +1,18 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Error = styled.span`
   color: #ff4136;
-`
+`;
 
 export const ButtonWrapper = styled.div`
   display: flex;
   width: 100%;
   justify-content: flex-end;
-`
+`;
 
 export const Center = styled.div`
   text-align: center;
-`
+`;
 
 export const InputField = styled.div`
   position: relative;
@@ -31,7 +31,7 @@ export const InputField = styled.div`
   input {
     font-size: 16px;
   }
-`
+`;
 
 export const Input = styled.input`
   width: 100%;
@@ -42,7 +42,7 @@ export const Input = styled.input`
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
-`
+`;
 
 export const ButtonIcon = styled.div`
   display: flex;
@@ -50,4 +50,4 @@ export const ButtonIcon = styled.div`
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
-`
+`;

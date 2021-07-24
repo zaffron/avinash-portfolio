@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { Container } from 'components/style'
+import { Container } from 'components/style';
 
 export const ServicesContainer = styled(Container)`
   display: grid;
@@ -17,7 +17,7 @@ export const ServicesContainer = styled(Container)`
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 238px);
   }
-`
+`;
 
 export const ServiceContent = styled.div`
   position: relative;
@@ -35,7 +35,7 @@ export const ServiceContent = styled.div`
   @media screen and (min-width: 768px) {
     padding: 6rem 0 2rem 2.5rem;
   }
-`
+`;
 
 export const ServiceIcon = styled.div`
   display: block;
@@ -45,14 +45,14 @@ export const ServiceIcon = styled.div`
   @media screen and (min-width: 768px) {
     font-style: 2rem;
   }
-`
+`;
 
 export const ServiceTitle = styled.h3`
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
   margin: 0;
-`
+`;
 
 export const ServiceButtonIcon = styled.div`
   font-size: 1.25rem;
@@ -60,7 +60,7 @@ export const ServiceButtonIcon = styled.div`
   transition: 0.3s;
   display: flex;
   align-items: center;
-`
+`;
 
 export const ServiceButton = styled.div`
   display: inline-flex;
@@ -81,7 +81,7 @@ export const ServiceButton = styled.div`
       transform: translateX(0.25rem);
     }
   }
-`
+`;
 
 export const ServiceModal = styled.div`
   position: fixed;
@@ -98,13 +98,13 @@ export const ServiceModal = styled.div`
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
-  ${props =>
+  ${(props) =>
     props.open &&
     `
     opacity: 1;
     visibility: visible;
   `}
-`
+`;
 
 export const ServiceModalTitle = styled.h4`
   font-size: var(--h4-font-size);
@@ -112,25 +112,25 @@ export const ServiceModalTitle = styled.h4`
   margin: 0;
   margin-bottom: var(--mb-1-5);
   line-height: 26px;
-`
+`;
 
 export const ServiceModalContent = styled.div`
   position: relative;
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
-`
+`;
 
 export const ServiceModalServices = styled.ul`
   display: grid;
   gap: 1.5rem;
   row-gap: 1rem;
   margin: 0;
-`
+`;
 
 export const ServiceModalService = styled.li`
   display: flex;
-`
+`;
 
 export const ServiceModalCloseIcon = styled.div`
   position: absolute;
@@ -139,11 +139,11 @@ export const ServiceModalCloseIcon = styled.div`
   font-size: 1.5rem;
   color: var(--first-color);
   cursor: pointer;
-`
+`;
 
 export const ServiceModalIcon = styled.div`
   color: var(--first-color);
   margin-right: var(--mb-0-75);
   display: flex;
   align-items: center;
-`
+`;

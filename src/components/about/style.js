@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { Container } from 'components/style'
+import { Container } from 'components/style';
 
 export const AboutContainer = styled(Container)`
   display: grid;
@@ -11,7 +11,7 @@ export const AboutContainer = styled(Container)`
   @media screen and (min-width: 568px) {
     grid-template-columns: repeat(2, 1fr);
   }
-`
+`;
 
 export const AboutImage = styled.img`
   width: 200px;
@@ -21,7 +21,7 @@ export const AboutImage = styled.img`
   @media screen and (min-width: 768px) {
     width: 350px;
   }
-`
+`;
 
 export const AboutDescription = styled.p`
   text-align: center;
@@ -29,7 +29,7 @@ export const AboutDescription = styled.p`
   @media screen and (min-width: 768px) {
     text-align: initial;
   }
-`
+`;
 
 export const AboutInfo = styled.div`
   display: flex;
@@ -38,7 +38,7 @@ export const AboutInfo = styled.div`
   @media screen and (min-width: 768px) {
     justify-content: space-between;
   }
-`
+`;
 
 export const AboutInfoTitle = styled.span`
   font-size: var(--h2-font-size);
@@ -49,7 +49,7 @@ export const AboutInfoTitle = styled.span`
   @media screen and (min-width: 768px) {
     justify-content: space-between;
   }
-`
+`;
 
 export const AboutInfoTitleName = styled.span`
   font-size: var(--smaller-font-size);
@@ -58,11 +58,11 @@ export const AboutInfoTitleName = styled.span`
   @media screen and (min-width: 768px) {
     justify-content: space-between;
   }
-`
+`;
 
 export const AboutInfoLink = styled.a`
   text-decoration: none;
-`
+`;
 
 export const AboutInfoButtons = styled.span`
   display: flex;
@@ -71,10 +71,10 @@ export const AboutInfoButtons = styled.span`
   @media screen and (min-width: 768px) {
     justify-content: initial;
   }
-`
+`;
 
 export const AboutInfoButtonIcon = styled.div`
   margin-left: 0.5rem;
   display: flex;
   align-items: center;
-`
+`;

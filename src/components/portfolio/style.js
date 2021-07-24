@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { Container } from 'components/style'
+import { Container } from 'components/style';
 
 export const PortfolioContainer = styled(Container)`
   overflow: initial;
@@ -27,7 +27,7 @@ export const PortfolioContainer = styled(Container)`
   .swiper-pagination-bullet {
     outline: none;
   }
-`
+`;
 
 export const PortfolioContent = styled.div`
   display: grid;
@@ -43,28 +43,43 @@ export const PortfolioContent = styled.div`
   @media screen and (min-width: 1024px) {
     column-gap: 3rem;
   }
-`
+`;
 
-export const PortfolioImage = styled.img`
+export const PortfolioImage = styled.div`
   border-radius: 0.5rem;
   justify-content: center;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  .gatsby-image-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+    img {
+      object-fit: cover;
+      height: 200px !important;
+      width: 200px !important;
+      object-fit: cover !important;
+    }
+  }
   @media screen and (min-width: 768px) {
     width: 320px;
   }
-`
+`;
 
-export const PortfolioData = styled.div``
+export const PortfolioData = styled.div``;
 
 export const PortfolioTitle = styled.h3`
   font-size: var(--h3-font-size);
   margin: 0;
   margin-bottom: var(--mb-0-5);
-`
+`;
 
 export const PortfolioDescription = styled.p`
   margin: 0;
   margin-bottom: var(--mb-0-75);
-`
+`;
 
 export const SwiperPortfolioIcon = styled.div`
   font-size: 2rem;
@@ -72,7 +87,7 @@ export const SwiperPortfolioIcon = styled.div`
   @media screen and (min-width: 1024px) {
     font-size: 3.5rem;
   }
-`
+`;
 
 export const PortfolioButtonIcon = styled.div`
   font-size: 1.25rem;
@@ -80,7 +95,7 @@ export const PortfolioButtonIcon = styled.div`
   transition: 0.3s;
   display: flex;
   align-items: center;
-`
+`;
 
 export const PortfolioButton = styled.a`
   display: inline-flex;
@@ -96,4 +111,4 @@ export const PortfolioButton = styled.a`
       transform: translateX(0.25rem);
     }
   }
-`
+`;

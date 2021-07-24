@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { FaTimes } from 'react-icons/fa'
-import { BsHouse, BsCardImage } from 'react-icons/bs'
-import { RiAppsLine, RiBriefcase2Line, RiMessage3Line, RiMoonLine, RiSunLine } from 'react-icons/ri'
-import { AiOutlineUser } from 'react-icons/ai'
-import { MdComputer } from 'react-icons/md'
+import React, { useEffect, useState } from 'react';
+import { FaTimes } from 'react-icons/fa';
+import { BsHouse, BsCardImage } from 'react-icons/bs';
+import { RiAppsLine, RiBriefcase2Line, RiMessage3Line, RiMoonLine, RiSunLine } from 'react-icons/ri';
+import { AiOutlineUser } from 'react-icons/ai';
+import { MdComputer } from 'react-icons/md';
 
-import { useScrollPosition } from 'hooks/useScrollPosition'
+import { useScrollPosition } from 'hooks/useScrollPosition';
 
 import {
   HeaderWrapper,
@@ -20,24 +20,24 @@ import {
   NavButtons,
   ChangeTheme,
   NavToggle,
-} from './style'
+} from './style';
 
 export default function Header() {
-  const [scrollY, setScrollY] = useState(0)
-  const [scrolledHeader, setScrolledHeader] = useState(false)
-  const [navbarToggled, toggleNavbar] = useState(false)
-  const [darkTheme, setDarkTheme] = useState(false)
-  useScrollPosition(function setScrollPosition({ currentPosition }) {
-    setScrollY(currentPosition.y)
-  })
+  const [scrollY, setScrollY] = useState(0);
+  const [scrolledHeader, setScrolledHeader] = useState(false);
+  const [navbarToggled, toggleNavbar] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(false);
+  useScrollPosition(({ currentPosition }) => {
+    setScrollY(currentPosition.y);
+  });
 
   useEffect(() => {
     if (scrollY <= -40) {
-      setScrolledHeader(true)
+      setScrolledHeader(true);
     } else {
-      setScrolledHeader(false)
+      setScrolledHeader(false);
     }
-  }, [scrollY])
+  }, [scrollY]);
 
   return (
     <HeaderWrapper scrolled={scrolledHeader}>
@@ -117,5 +117,5 @@ export default function Header() {
         </NavButtons>
       </Nav>
     </HeaderWrapper>
-  )
+  );
 }

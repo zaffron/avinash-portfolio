@@ -1,13 +1,13 @@
-import React from 'react'
-import { Form, withFormik, FastField, ErrorMessage } from 'formik'
-import Recaptcha from 'react-google-recaptcha'
-import * as Yup from 'yup'
-import { RiSendPlane2Line } from 'react-icons/ri'
+import React from 'react';
+import { Form, withFormik, FastField, ErrorMessage } from 'formik';
+import Recaptcha from 'react-google-recaptcha';
+import * as Yup from 'yup';
+import { RiSendPlane2Line } from 'react-icons/ri';
 
-import { Button } from 'components/style'
-import { recaptchaKey } from 'config'
+import { Button } from 'components/style';
+import { recaptchaKey } from 'config';
 
-import { Error, ButtonWrapper, InputField, Center, Input, ButtonIcon } from './styles'
+import { Error, ButtonWrapper, InputField, Center, Input, ButtonIcon } from './styles';
 
 const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) => (
   <Form
@@ -66,7 +66,7 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
           component={Recaptcha}
           sitekey={recaptchaKey}
           name="recaptcha"
-          onChange={value => setFieldValue('recaptcha', value)}
+          onChange={(value) => setFieldValue('recaptcha', value)}
         />
         <ErrorMessage component={Error} name="recaptcha" />
       </InputField>
@@ -87,7 +87,7 @@ const ContactForm = ({ setFieldValue, isSubmitting, values, errors, touched }) =
       </Button>
     </ButtonWrapper>
   </Form>
-)
+);
 
 export default withFormik({
   mapPropsToValues: () => ({
@@ -100,18 +100,16 @@ export default withFormik({
   validationSchema: () =>
     Yup.object().shape({
       name: Yup.string().required('Full name field is required'),
-      email: Yup.string()
-        .email('Invalid email')
-        .required('Email field is required'),
+      email: Yup.string().email('Invalid email').required('Email field is required'),
       message: Yup.string().required('Message field is required'),
       recaptcha: Yup.string().required('Robots are not welcome yet!'),
     }),
   handleSubmit: async ({ name, email, message, recaptcha }, { setSubmitting, resetForm, setFieldValue }) => {
     try {
-      const encode = data =>
+      const encode = (data) =>
         Object.keys(data)
-          .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-          .join('&')
+          .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+          .join('&');
       await fetch('/?no-cache=1', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -122,14 +120,14 @@ export default withFormik({
           message,
           'g-recaptcha-response': recaptcha,
         }),
-      })
-      await setSubmitting(false)
-      await setFieldValue('success', true)
-      setTimeout(() => resetForm(), 2000)
+      });
+      await setSubmitting(false);
+      await setFieldValue('success', true);
+      setTimeout(() => resetForm(), 2000);
     } catch (err) {
-      setSubmitting(false)
-      setFieldValue('success', false)
-      alert('Something went wrong, please try again!') // eslint-disable-line
+      setSubmitting(false);
+      setFieldValue('success', false);
+      alert('Something went wrong, please try again!'); // eslint-disable-line
     }
   },
-})(ContactForm)
+})(ContactForm);
