@@ -1,7 +1,7 @@
 import React from 'react';
 import { RiSendPlane2Line, RiMouseLine, RiLinkedinFill } from 'react-icons/ri';
 import { MdArrowDownward } from 'react-icons/md';
-import { FaFacebookF } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 
 import { Section } from 'components/style';
@@ -39,6 +39,9 @@ export default function Hero() {
             </HomeSocialIcon>
             <HomeSocialIcon href="https://www.facebook.com/avlas.rijal" target="_blank">
               <FaFacebookF />
+            </HomeSocialIcon>
+            <HomeSocialIcon href="https://twitter.com/avinashrijal" target="_blank">
+              <FaTwitter />
             </HomeSocialIcon>
             <HomeSocialIcon href="https://www.github.com/zaffron" target="_blank">
               <FiGithub />
