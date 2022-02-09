@@ -23,24 +23,24 @@ export default function About() {
       <AboutContainer>
         <AboutImage src="/me-secondary.jpeg" alt="Me reading" />
         <AboutDescription>
-          Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux
-          design, delivering quality work.
+          Web developer, with extensive knowledge and years of experience, working in web technologies and UI / UX
+          design and delivering quality work.
         </AboutDescription>
         <AboutInfo>
           <div>
-            <AboutInfoTitle>08+</AboutInfoTitle>
+            <AboutInfoTitle>03+</AboutInfoTitle>
             <AboutInfoTitleName>
               Years <br /> Experience
             </AboutInfoTitleName>
           </div>
           <div>
-            <AboutInfoTitle>20+</AboutInfoTitle>
+            <AboutInfoTitle>10+</AboutInfoTitle>
             <AboutInfoTitleName>
               Completed <br /> Projects
             </AboutInfoTitleName>
           </div>
           <div>
-            <AboutInfoTitle>05+</AboutInfoTitle>
+            <AboutInfoTitle>02</AboutInfoTitle>
             <AboutInfoTitleName>
               Companies <br /> Worked
             </AboutInfoTitleName>

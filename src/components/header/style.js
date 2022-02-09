@@ -96,15 +96,6 @@ export const NavButtons = styled.div`
   height: 100%;
 `;
 
-export const ChangeTheme = styled.div`
-  display: flex;
-  align-items: center;
-  font-size: 1.25rem;
-  color: var(--title-color);
-  margin-right: var(--mb-1);
-  cursor: pointer;
-`;
-
 export const HeaderWrapper = styled.header`
   width: 100%;
   position: fixed;

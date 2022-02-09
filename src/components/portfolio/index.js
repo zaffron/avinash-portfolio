@@ -4,7 +4,7 @@ import Swiper from 'react-id-swiper';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 import { useStaticQuery, graphql } from 'gatsby';
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import { Section, SectionTitle, SectionSubtitle } from 'components/style';
 
@@ -67,6 +67,7 @@ export default function Portfolio() {
                 childImageSharp {
                   gatsbyImageData(
                     width: 200
+                    placeholder: BLURRED
                   )
                 }
               }

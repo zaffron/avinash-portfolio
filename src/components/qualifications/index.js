@@ -29,7 +29,7 @@ export default function Qualifications() {
       last: false,
     },
     {
-      title: 'BCA',
+      title: 'Bachelor In Computer Applications (BCA)',
       subtitle: 'India - Bangalore University',
       time: '2015-2018',
       last: true,
@@ -50,9 +50,15 @@ export default function Qualifications() {
       last: false,
     },
     {
+      title: 'Junior Developer',
+      subtitle: 'France - DzangoTech Accelerator',
+      time: '2018 - 2019',
+      last: false,
+    },
+    {
       title: 'Software Developer - II',
-      subtitle: 'Nepal - DzangoTech',
-      time: '2018 - Present',
+      subtitle: 'France - Hiboo - DzangoTech Accelerator',
+      time: '2019 - Present',
       last: true,
     },
   ];
@@ -93,7 +99,7 @@ export default function Qualifications() {
   return (
     <Section id="qualifications">
       <SectionTitle>Qualification</SectionTitle>
-      <SectionSubtitle>My personal journey</SectionSubtitle>
+      <SectionSubtitle>My Personal Journey</SectionSubtitle>
       <Container>
         <QualificationTabs>
           <QualificationButton onClick={() => setActiveTabIndex(0)} active={activeTabIndex === 0}>

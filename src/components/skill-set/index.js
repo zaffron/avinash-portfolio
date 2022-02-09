@@ -28,10 +28,10 @@ export default function SkillSet({ skillSet }) {
         <SkillData key={skillData.name}>
           <SkillTitle>
             <SkillName>{skillData.name}</SkillName>
-            <SkillNumber>{skillData.number}</SkillNumber>
+            <SkillNumber>{skillData.year === 1 ? `Around 1 year` : `${skillData.year} years`}</SkillNumber>
           </SkillTitle>
           <SkillBar>
-            <SkillPercentage width={skillData.number} />
+            <SkillPercentage width="100%" />
           </SkillBar>
         </SkillData>
       ))}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { BsHouse, BsCardImage } from 'react-icons/bs';
-import { RiAppsLine, RiBriefcase2Line, RiMessage3Line, RiMoonLine, RiSunLine } from 'react-icons/ri';
+import { RiAppsLine, RiBriefcase2Line, RiMessage3Line } from 'react-icons/ri';
 import { AiOutlineUser } from 'react-icons/ai';
 import { MdComputer } from 'react-icons/md';
 
@@ -18,7 +18,6 @@ import {
   NavIcon,
   NavClose,
   NavButtons,
-  ChangeTheme,
   NavToggle,
 } from './style';
 
@@ -26,7 +25,6 @@ export default function Header() {
   const [scrollY, setScrollY] = useState(0);
   const [scrolledHeader, setScrolledHeader] = useState(false);
   const [navbarToggled, toggleNavbar] = useState(false);
-  const [darkTheme, setDarkTheme] = useState(false);
   useScrollPosition(({ currentPosition }) => {
     setScrollY(currentPosition.y);
   });
@@ -107,10 +105,6 @@ export default function Header() {
           </NavClose>
         </NavMenu>
         <NavButtons>
-          <ChangeTheme onClick={() => setDarkTheme(!darkTheme)}>
-            {darkTheme ? <RiMoonLine /> : <RiSunLine />}
-          </ChangeTheme>
-
           <NavToggle onClick={() => toggleNavbar(true)}>
             <RiAppsLine />
           </NavToggle>

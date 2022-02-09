@@ -9,28 +9,26 @@ import SkillSet from 'components/skill-set';
 import { SkillsContainer } from './style';
 
 export default function Skills() {
+  const totalYearsWorked = 4;
+
   const skillSets = [
     {
       id: 1,
       icon: <BiCodeCurly />,
       title: 'Frontend Developer',
-      subtitle: 'More than 4 years',
+      subtitle: `More than ${totalYearsWorked} years`,
       data: [
         {
-          name: 'HTML',
-          number: '90%',
+          name: 'HTML / CSS / SCSS / LESS',
+          year: totalYearsWorked,
         },
         {
-          name: 'CSS',
-          number: '80%',
+          name: 'JS / React / VueJS',
+          year: totalYearsWorked - 1,
         },
         {
-          name: 'JavaScript',
-          number: '80%',
-        },
-        {
-          name: 'React',
-          number: '90%',
+          name: 'Gatsby / NextJS / Jekyll / Netlify',
+          year: totalYearsWorked - 2,
         },
       ],
     },
@@ -38,23 +36,15 @@ export default function Skills() {
       id: 2,
       icon: <AiOutlineAntDesign />,
       title: 'Designer',
-      subtitle: 'More than 4 years',
+      subtitle: `More than ${totalYearsWorked/2} years`,
       data: [
         {
           name: 'Figma',
-          number: '90%',
-        },
-        {
-          name: 'Sketch',
-          number: '80%',
+          year: totalYearsWorked / 2,
         },
         {
           name: 'Photoshop',
-          number: '80%',
-        },
-        {
-          name: 'Illustrator',
-          number: '50%',
+          year: totalYearsWorked / 2,
         },
       ],
     },
@@ -65,20 +55,16 @@ export default function Skills() {
       subtitle: 'More than 3 years',
       data: [
         {
-          name: 'PHP',
-          number: '90%',
+          name: 'PHP / Laravel / MySQL',
+          year: 2,
         },
         {
-          name: 'NodeJS',
-          number: '80%',
+          name: 'NodeJS / Mongoose / Postgres',
+          year: 2,
         },
         {
-          name: 'Laravel',
-          number: '80%',
-        },
-        {
-          name: 'Firebase',
-          number: '90%',
+          name: 'Firebase / Socket.io',
+          year: 1,
         },
       ],
     },
@@ -90,19 +76,19 @@ export default function Skills() {
       data: [
         {
           name: 'CI/CD',
-          number: '90%',
+          year: 2,
         },
         {
           name: 'Docker',
-          number: '80%',
+          year: 2,
         },
         {
           name: 'Ansible',
-          number: '80%',
+          year: 1,
         },
         {
           name: 'Terraform',
-          number: '90%',
+          year: 1,
         },
       ],
     },
@@ -111,7 +97,7 @@ export default function Skills() {
   return (
     <Section id="skills">
       <SectionTitle>Skills</SectionTitle>
-      <SectionSubtitle>My technical level</SectionSubtitle>
+      <SectionSubtitle>My Technical Level</SectionSubtitle>
       <SkillsContainer>
         {skillSets.map((skillSet) => (
           <SkillSet key={skillSet.id} skillSet={skillSet} />

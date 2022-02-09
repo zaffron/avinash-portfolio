@@ -34,13 +34,13 @@ export default function Hero() {
       <HomeContainer>
         <HomeContent>
           <HomeSocial>
-            <HomeSocialIcon href="https://www.linkedin.com/in/dev-avinash-rijal/" targe="_blank">
+            <HomeSocialIcon href="https://www.linkedin.com/in/dev-avinash-rijal/" target="_blank">
               <RiLinkedinFill />
             </HomeSocialIcon>
-            <HomeSocialIcon href="https://www.facebook.com/avlas.rijal" targe="_blank">
+            <HomeSocialIcon href="https://www.facebook.com/avlas.rijal" target="_blank">
               <FaFacebookF />
             </HomeSocialIcon>
-            <HomeSocialIcon href="https://www.github.com/zaffron" targe="_blank">
+            <HomeSocialIcon href="https://www.github.com/zaffron" target="_blank">
               <FiGithub />
             </HomeSocialIcon>
           </HomeSocial>
@@ -73,7 +73,7 @@ export default function Hero() {
             <HomeTitle>Hi, I'am Avinash Rijal</HomeTitle>
             <HomeSubtitle>Full Stack Developer</HomeSubtitle>
             <HomeDescription>
-              High level experience in web development, knowledge, producing quality work.
+              Experienced web developer. Dedicated to producing quality work.
             </HomeDescription>
             <ButtonLink to="/#contact">
               <ContactButton variant="flex">

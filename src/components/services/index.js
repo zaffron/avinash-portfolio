@@ -72,7 +72,7 @@ export default function Services() {
         'REST API development',
         'GraphQL API development',
         'PHP/Node supported backend development',
-        'Moder event driven services',
+        'Modern event driven services',
       ],
     },
   ];
