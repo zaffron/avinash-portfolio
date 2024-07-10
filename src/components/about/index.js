@@ -24,11 +24,11 @@ export default function About() {
         <AboutImage src="/me-secondary.jpeg" alt="Me reading" />
         <AboutDescription>
           Web developer, with extensive knowledge and years of experience, working in web technologies and UI / UX
-          design and delivering quality work.
+          development and delivering quality work.
         </AboutDescription>
         <AboutInfo>
           <div>
-            <AboutInfoTitle>03+</AboutInfoTitle>
+            <AboutInfoTitle>05+</AboutInfoTitle>
             <AboutInfoTitleName>
               Years <br /> Experience
             </AboutInfoTitleName>

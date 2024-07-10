@@ -1,6 +1,6 @@
 import React from 'react';
 import { BiCodeCurly, BiServer } from 'react-icons/bi';
-import { AiOutlineAntDesign } from 'react-icons/ai';
+import { BsGpuCard } from 'react-icons/bs';
 import { SiAzuredevops } from 'react-icons/si';
 
 import { Section, SectionTitle, SectionSubtitle } from 'components/style';
@@ -9,7 +9,7 @@ import SkillSet from 'components/skill-set';
 import { SkillsContainer } from './style';
 
 export default function Skills() {
-  const totalYearsWorked = 4;
+  const totalYearsWorked = 6;
 
   const skillSets = [
     {
@@ -20,31 +20,35 @@ export default function Skills() {
       data: [
         {
           name: 'HTML / CSS / SCSS / LESS',
-          year: totalYearsWorked,
+          year: 4,
         },
         {
           name: 'JS / React / VueJS',
-          year: totalYearsWorked - 1,
+          year: 4,
         },
         {
           name: 'Gatsby / NextJS / Jekyll / Netlify',
-          year: totalYearsWorked - 2,
+          year: 2,
         },
       ],
     },
     {
       id: 2,
-      icon: <AiOutlineAntDesign />,
-      title: 'Designer',
-      subtitle: `More than ${totalYearsWorked/2} years`,
+      icon: <BsGpuCard />,
+      title: 'ML Engineer',
+      subtitle: `Around ${totalYearsWorked/6} years`,
       data: [
         {
-          name: 'Figma',
-          year: totalYearsWorked / 2,
+          name: 'Auto categorization',
+          year: 1,
         },
         {
-          name: 'Photoshop',
-          year: totalYearsWorked / 2,
+          name: 'Re-ranking',
+          year: 1,
+        },
+        {
+          name: 'Content Generation',
+          year: 1,
         },
       ],
     },
@@ -60,7 +64,7 @@ export default function Skills() {
         },
         {
           name: 'NodeJS / Mongoose / Postgres',
-          year: 2,
+          year: 4,
         },
         {
           name: 'Firebase / Socket.io',
@@ -76,18 +80,14 @@ export default function Skills() {
       data: [
         {
           name: 'CI/CD',
-          year: 2,
+          year: 3,
         },
         {
           name: 'Docker',
-          year: 2,
+          year: 4,
         },
         {
-          name: 'Ansible',
-          year: 1,
-        },
-        {
-          name: 'Terraform',
+          name: 'Ansible/Terraform',
           year: 1,
         },
       ],

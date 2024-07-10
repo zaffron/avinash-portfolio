@@ -21,7 +21,7 @@ export default function ProjectInMind() {
         <ProjectContainer>
           <ProjectData>
             <ProjectTitle>Have a new project in mind?</ProjectTitle>
-            <ProjectDescription>Contact me now and get a 20% discount on your new project</ProjectDescription>
+            <ProjectDescription>Let me know if you like my blogs, works or you want to hire me to build something interesting</ProjectDescription>
             <ProjectButton href="/#contact" alt="Contact me">
               Contact Me
               <ProjectButtonIcon>

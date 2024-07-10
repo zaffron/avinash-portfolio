@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-personal-starter-blog",
+  "name": "gatsby-personal-portfolio",
   "private": true,
   "description": "A personal blog starter for a blog powered by Netlify CMS, based on the default blog starter",
-  "version": "2.0.0",
-  "author": "Thomas Wang <thomas@wang.sh>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "version": "3.0.0",
+  "author": "Avinash Rijal <avinashrijal@gmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
@@ -67,16 +64,7 @@
     "gatsby-plugin-root-import": "^2.0.8",
     "prettier": "^2.5.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

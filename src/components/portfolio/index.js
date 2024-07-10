@@ -18,6 +18,7 @@ import {
   PortfolioDescription,
   SwiperPortfolioIcon,
   PortfolioButton,
+  PortfolioContentWrapper,
 } from './style';
 
 import 'swiper/swiper-bundle.min.css';
@@ -31,12 +32,13 @@ export default function Portfolio() {
       type: 'bullets',
       clickable: true,
     },
-    loop: true,
+    loop: false,
     cssMode: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    slidesPerView: 2,
     renderPrevButton: () => (
       <div className="swiper-button-prev">
         <SwiperPortfolioIcon>
@@ -51,7 +53,7 @@ export default function Portfolio() {
         </SwiperPortfolioIcon>
       </div>
     ),
-    spaceBetween: 30,
+    spaceBetween: 10,
   };
   const {
     allFeaturedWorksJson: { edges: featuredWorks },
@@ -66,7 +68,7 @@ export default function Portfolio() {
               image {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 200
+                    width: 400
                     placeholder: BLURRED
                   )
                 }
@@ -90,23 +92,25 @@ export default function Portfolio() {
             const image = getImage(work.node.image)
 
             return (
-              <PortfolioContent key={work.node.name}>
-                <PortfolioImage>
-                  <GatsbyImage image={image} alt={work.node.name} />
-                </PortfolioImage>
-                <PortfolioData>
-                  <PortfolioTitle>{work.node.name}</PortfolioTitle>
-                  <PortfolioDescription>{work.node.description}</PortfolioDescription>
-                  {work.node.url && (
-                    <PortfolioButton href={work.node.url} alt={work.node.name}>
-                      Preview{' '}
-                      <PortfolioButtonIcon>
-                        <BsArrowRightShort />
-                      </PortfolioButtonIcon>
-                    </PortfolioButton>
-                  )}
-                </PortfolioData>
-              </PortfolioContent>
+              <PortfolioContentWrapper>
+                <PortfolioContent key={work.node.name}>
+                  <PortfolioImage>
+                    <GatsbyImage image={image} alt={work.node.name} />
+                  </PortfolioImage>
+                  <PortfolioData>
+                    <PortfolioTitle>{work.node.name}</PortfolioTitle>
+                    <PortfolioDescription>{work.node.description}</PortfolioDescription>
+                    {work.node.url && (
+                      <PortfolioButton href={work.node.url} alt={work.node.name}>
+                        Preview{' '}
+                        <PortfolioButtonIcon>
+                          <BsArrowRightShort />
+                        </PortfolioButtonIcon>
+                      </PortfolioButton>
+                    )}
+                  </PortfolioData>
+                </PortfolioContent>
+              </PortfolioContentWrapper>
             )
           })}
         </Swiper>

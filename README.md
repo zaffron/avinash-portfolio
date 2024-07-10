@@ -1,8 +1,8 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0643e551-0fef-4f57-9d3c-29d576f3e06c/deploy-status)](https://app.netlify.com/sites/gatsby-personal-starter-blog/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9285bbd8-d22a-441e-8a55-1d9eb0328f15/deploy-status)](https://app.netlify.com/sites/zaffron/deploys)
 
 <img alt="screenshot" src="./screenshot.gif">
 
-This is the search-enabled version of Gatsby Personal Starter Blog!
+This is the search-enabled version of Portfolio and Blog!
 
 ## 🚀 Quick start
 

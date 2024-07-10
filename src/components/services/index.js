@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BsGrid1X2Fill, BsArrowRightShort } from 'react-icons/bs';
+import { BsGpuCard, BsArrowRightShort } from 'react-icons/bs';
 import { IoLaptopSharp } from 'react-icons/io5';
 import { FaServer } from 'react-icons/fa';
 import { TiTimes } from 'react-icons/ti';
@@ -28,22 +28,6 @@ export default function Services() {
 
   const services = [
     {
-      icon: <BsGrid1X2Fill />,
-      title: (
-        <span>
-          UI/UX
-          <br />
-          Designeer
-        </span>
-      ),
-      data: [
-        'I design the user interface',
-        'Web page design',
-        'I design interactive UX elements',
-        'I position your company brand',
-      ],
-    },
-    {
       icon: <IoLaptopSharp />,
       title: (
         <span>
@@ -53,10 +37,10 @@ export default function Services() {
         </span>
       ),
       data: [
-        'I develop the user interface',
-        'Web page development',
-        'Interactive web page development',
-        'Reactive components development',
+        "Building dynamic and responsive user interfaces",
+        "Developing interactive web applications",
+        "Creating reusable and efficient components",
+        "Enhancing user experience with seamless performance"
       ],
     },
     {
@@ -71,8 +55,24 @@ export default function Services() {
       data: [
         'REST API development',
         'GraphQL API development',
-        'PHP/Node supported backend development',
-        'Modern event driven services',
+        'PHP/Node/Python supported backend development',
+        'Automating deployment pipelines (CI/CD)',
+      ],
+    },
+    {
+      icon: <BsGpuCard />,
+      title: (
+        <span>
+          ML
+          <br />
+          Enthusiast
+        </span>
+      ),
+      data: [
+        'I like to work on fine tuning models',
+        'I like to solve domain problems if possible with automation',
+        'Worked on solving auto categorization, text classification and re-ranking algorithms so far',
+        'I like to help on data science projects to achieve better results',
       ],
     },
   ];

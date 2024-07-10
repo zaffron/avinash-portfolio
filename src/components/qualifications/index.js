@@ -46,19 +46,25 @@ export default function Qualifications() {
     {
       title: 'Developer',
       subtitle: 'Nepal - Studytweaks',
-      time: '2018 - Present',
+      time: '2018 - On Contract',
       last: false,
     },
     {
-      title: 'Junior Developer',
-      subtitle: 'France - DzangoTech Accelerator',
+      title: 'Software Developer - I',
+      subtitle: 'France - DzangoTech',
       time: '2018 - 2019',
       last: false,
     },
     {
       title: 'Software Developer - II',
-      subtitle: 'France - Hiboo - DzangoTech Accelerator',
-      time: '2019 - Present',
+      subtitle: 'France - Hiboo',
+      time: '2019 - 2022',
+      last: false,
+    },
+    {
+      title: 'Full stack Developer/ML Engineer',
+      subtitle: 'Bangkok - Ooozou',
+      time: '2022 - present',
       last: true,
     },
   ];
@@ -104,24 +110,24 @@ export default function Qualifications() {
         <QualificationTabs>
           <QualificationButton onClick={() => setActiveTabIndex(0)} active={activeTabIndex === 0}>
             <QualificationIcon>
-              <HiOutlineAcademicCap />
-            </QualificationIcon>
-            Education
-          </QualificationButton>
-          <QualificationButton onClick={() => setActiveTabIndex(1)} active={activeTabIndex === 1}>
-            <QualificationIcon>
               <HiOutlineBriefcase />
             </QualificationIcon>
             Work
           </QualificationButton>
+          <QualificationButton onClick={() => setActiveTabIndex(1)} active={activeTabIndex === 1}>
+            <QualificationIcon>
+              <HiOutlineAcademicCap />
+            </QualificationIcon>
+            Education
+          </QualificationButton>
         </QualificationTabs>
 
         <QualificationSections>
-          <QualificationContent active={activeTabIndex === 0} id="education">
-            {educationQualifications.map((data, index) => renderQualificationContent(data, index))}
-          </QualificationContent>
-          <QualificationContent active={activeTabIndex === 1} id="work">
+          <QualificationContent active={activeTabIndex === 0} id="work">
             {workQualifications.map((data, index) => renderQualificationContent(data, index))}
+          </QualificationContent>
+          <QualificationContent active={activeTabIndex === 1} id="education">
+            {educationQualifications.map((data, index) => renderQualificationContent(data, index))}
           </QualificationContent>
         </QualificationSections>
       </Container>

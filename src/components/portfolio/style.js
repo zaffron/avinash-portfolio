@@ -29,56 +29,59 @@ export const PortfolioContainer = styled(Container)`
   }
 `;
 
+export const PortfolioContentWrapper = styled.div`
+  display: flex;
+  padding: 20px;
+  width: 250px;
+  height: 500px;
+`
+
 export const PortfolioContent = styled.div`
-  display: grid;
-  gap: 1.5rem;
-  padding: 0 1.5rem;
-  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   width: 100%;
-  padding: 3rem;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
-  @media screen and (min-width: 1024px) {
-    column-gap: 3rem;
-  }
+  height: 100%;
+  border-radius: 0.5rem;
 `;
 
 export const PortfolioImage = styled.div`
   border-radius: 0.5rem;
   justify-content: center;
-  width: 200px;
+  width: 100%;
   height: 200px;
-  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   .gatsby-image-wrapper {
     display: flex;
-    align-items: center;
-    height: 100%;
-    width: 200px;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
     img {
+      height: 200px;
       object-fit: cover;
-      height: 200px !important;
-      width: 200px !important;
-      object-fit: cover !important;
     }
-  }
-  @media screen and (min-width: 768px) {
-    width: 320px;
   }
 `;
 
-export const PortfolioData = styled.div``;
+export const PortfolioData = styled.div`
+  height: 300px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`;
 
 export const PortfolioTitle = styled.h3`
   font-size: var(--h3-font-size);
   margin: 0;
   margin-bottom: var(--mb-0-5);
+  text-align: center;
 `;
 
 export const PortfolioDescription = styled.p`
   margin: 0;
   margin-bottom: var(--mb-0-75);
+  text-align: center;
 `;
 
 export const SwiperPortfolioIcon = styled.div`
