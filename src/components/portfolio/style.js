@@ -11,11 +11,11 @@ export const PortfolioContainer = styled(Container)`
   }
 
   .swiper-button-prev {
-    left: -0.2rem;
+    left: -0.1rem;
   }
 
   .swiper-button-next {
-    right: -0.2rem;
+    right: -0.1rem;
   }
 
   .swiper-pagination-bullet-active {
@@ -26,6 +26,10 @@ export const PortfolioContainer = styled(Container)`
   .swiper-button-next,
   .swiper-pagination-bullet {
     outline: none;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -8px;
   }
 `;
 

@@ -38,7 +38,12 @@ export default function Portfolio() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 2,
+    slidesPerView: 1,
+    breakpoints: {
+      720: {
+         slidesPerView: 2
+      },
+    },
     renderPrevButton: () => (
       <div className="swiper-button-prev">
         <SwiperPortfolioIcon>
@@ -92,7 +97,7 @@ export default function Portfolio() {
             const image = getImage(work.node.image)
 
             return (
-              <PortfolioContentWrapper>
+              <PortfolioContentWrapper key={work.node.name}>
                 <PortfolioContent key={work.node.name}>
                   <PortfolioImage>
                     <GatsbyImage image={image} alt={work.node.name} />
