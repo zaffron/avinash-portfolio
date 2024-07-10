@@ -4,7 +4,6 @@ date: 2020-06-06T01:22:55.506Z
 title: Awesome Images
 description: Fix for gatsby-plugin-mdx and gatsby-remark-images
 ---
-
 ![Great Gatsby](/../assets/great2.jpg "Great Gatsby")
 
 ## Netlify CMS Media Configuration
@@ -39,3 +38,5 @@ If you try this…
 ```
 
 …everything works as it should.
+
+![just a cool image to show off](../assets/wallhaven-zyj28v.jpg "Just a cool image to show off")
