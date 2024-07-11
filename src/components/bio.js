@@ -63,6 +63,9 @@ function Bio() {
 
 const Container = styled.div`
   display: flex;
+  @media screen and (min-width: 768px) {
+    margin-top: 3rem;
+  }
 `;
 
 export default Bio;
