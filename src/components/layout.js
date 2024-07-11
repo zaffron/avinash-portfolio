@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { FaHeart } from "react-icons/fa6";
+
 import Header from './header';
 import { Main } from './style';
 
@@ -13,12 +15,15 @@ const Layout = (props) => {
       <Main>{children}</Main>
       <Footer>
         © {new Date().getFullYear()}, Built with
-        <span style={{ margin: '0 10px' }}>❤️</span>by {' '}
+        <HeartWrapper>
+          <FaHeart />
+        </HeartWrapper> {' '} by {' '}
         <a href="https://avinashrijal.com.np/">Avinash Rijal</a>
         <br />Powered by
         {' '}
         <a target="_blank" href="https://www.gatsbyjs.org" rel="noreferrer">Gatsby</a>
-        <br />Hosted & used CMS by
+        {' '}
+        &
         {' '}
         <a target="_blank" href="https://www.netlify.com" rel="noreferrer">Netlify</a>
       </Footer>
@@ -35,5 +40,10 @@ const Footer = styled.footer`
   margin: 24px;
   padding-bottom: 42px;
 `;
+
+const HeartWrapper = styled.span`
+  margin: 0 10px;
+  color: var(--first-color);
+`
 
 export default Layout;

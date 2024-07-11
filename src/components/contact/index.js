@@ -29,7 +29,7 @@ export default function Contact() {
             </ContactInformationIcon>
             <div>
               <ContactInformationTitle>Call Me</ContactInformationTitle>
-              <ContactInformationSubtitle>+977-9862770794</ContactInformationSubtitle>
+              <ContactInformationSubtitle>+66-916667535</ContactInformationSubtitle>
             </div>
           </ContactInformation>
 
@@ -49,7 +49,7 @@ export default function Contact() {
             </ContactInformationIcon>
             <div>
               <ContactInformationTitle>Location</ContactInformationTitle>
-              <ContactInformationSubtitle>Lalitpur, Kathmandu, Nepal</ContactInformationSubtitle>
+              <ContactInformationSubtitle>Bangkok, Thailand</ContactInformationSubtitle>
             </div>
           </ContactInformation>
         </ContactInformationWrapper>

@@ -28,7 +28,9 @@ export const HomeSocialIcon = styled.a`
   }
 `;
 
-export const HomeImg = styled.div``;
+export const HomeImg = styled.div`
+  margin-left: 6%;
+`;
 
 export const HomeBlob = styled.svg`
   width: 200px;
@@ -41,8 +43,9 @@ export const HomeBlobImage = styled.image`
 
 export const HomeData = styled.div`
   grid-column: 1/3;
+  text-align: left;
 
-  @media screen and (min-width: 350px) {
+  @media screen and (max-width: 500px) {
     text-align: center;
     margin-top: 2rem;
   }
@@ -50,8 +53,15 @@ export const HomeData = styled.div`
 
 export const HomeTitle = styled.h1`
   font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
   margin: 0;
 `;
+
+export const HomeTitleName = styled.span`
+  color: var(--first-color);
+  font-weight: var(--font-bold);
+  font-size: var(--h2-font-size)
+`
 
 export const HomeSubtitle = styled.span`
   font-size: var(--h3-font-size);
