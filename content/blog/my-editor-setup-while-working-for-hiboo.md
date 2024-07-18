@@ -5,6 +5,10 @@ title: My editor setup while working for Hiboo
 description: Basic details of how I have setup my editor to work upmost for the
   Hiboo app/api
 ---
+![hiboo](../assets/15cf3730-fedd-42c1-933f-46639b6c5e2a.png "Hiboo")
+
+
+
 I use **VSCode**. It's free, simple and runs smoothly on all platforms.
 
 Let's talk about extensions. In past I have used many extensions and after filtering out most of the extensions that were memory/processor hogging; I have came to these extensions for overall usage. You can copy and paste them on your terminal if you would like to install them.
@@ -45,4 +49,4 @@ code --install-extension VisualStudioExptTeam.vscodeintellicode
 * Use F11 key to remove the title bar to avoid distraction from notification.
 * Use `Ctrl+b` to show/hide the sidebar.
 * Use  [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) extension to sync your extensions across the multiple platform you use your editor
-* You can use kite for AI auto completion if you are interested in getting many suggestions while coding and avoid repetitive tasks. 
+* You can use kite for AI auto completion if you are interested in getting many suggestions while coding and avoid repetitive tasks.
