@@ -24,8 +24,6 @@ Here is a basic outline of how you can achieve this:
 1. **Fetch External IP Address**: Write a script to make the API request and retrieve the external IP address.
 2. **Update DNS Record**: Use a DNS provider's API to update the A record with the fetched IP address.
 
-
-
 T﻿he url that gave me the proper result that I wanted was:
 
 `http://192.168.1.1/cgi-bin/json/diagnoseStatus.json`
