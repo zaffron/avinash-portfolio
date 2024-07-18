@@ -17,7 +17,7 @@ const Layout = (props) => {
         © {new Date().getFullYear()}, Built with
         <HeartWrapper>
           <FaHeart />
-        </HeartWrapper> {' '} by {' '}
+        </HeartWrapper>by {' '}
         <a href="https://avinashrijal.com.np/">Avinash Rijal</a>
         <br />Powered by
         {' '}
@@ -42,7 +42,7 @@ const Footer = styled.footer`
 `;
 
 const HeartWrapper = styled.span`
-  margin: 0 10px;
+  margin: 10px 10px 0;
   color: var(--first-color);
 `
 

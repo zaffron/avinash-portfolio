@@ -2,11 +2,36 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
+import styled from 'styled-components';
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm, scale } from '../utils/typography';
 import { Container } from '../components/style';
+
+const BlogPostTitle = styled.h1`
+  text-align: center;
+  line-height: 1.5;
+`;
+
+const BlogPostDate = styled.p`
+  text-align: center;
+  display: block;
+
+  // show a small horizontal bar on top
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    transform: translateX(-15px);
+    left: 50%;
+    background: gray;
+    position: absolute;
+    top: -0.5rem;
+  }
+`;
 
 const BlogPostTemplate = (props) => {
   const { data, pageContext, location } = props;
@@ -17,18 +42,17 @@ const BlogPostTemplate = (props) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
-      <Container>
-        <h1>{post.frontmatter.title}</h1>
-        <p
+      <Container style={{ marginTop: '112px' }}>
+        <BlogPostTitle>{post.frontmatter.title}</BlogPostTitle>
+        <BlogPostDate
           style={{
             ...scale(-1 / 5),
-            display: `block`,
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(-0.5),
           }}
         >
           {post.frontmatter.date}
-        </p>
+        </BlogPostDate>
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr
           style={{
