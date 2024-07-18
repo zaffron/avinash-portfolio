@@ -1,8 +1,7 @@
 ---
 path: serving-homeserver-with-true-th-cloudflare
 date: 2024-07-18T19:06:36.041Z
-title: How to server your home server with True Fiber internet without buying
-  static IP
+title: Serving Your Home Server with True Fiber Internet Without a Static IP
 description: Serve your home server without buying static IP and using IP behind NAT
 ---
 ![homeserver behind NAT](../assets/dall·e-2024-07-19-02.13.24-a-black-and-white-sketch-of-data-flow-from-a-home-server-to-internet-users-bypassing-the-nat-network-address-translation-.-the-sketch-should-show-a-.webp "homeserver behind NAT")
