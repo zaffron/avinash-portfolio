@@ -27,7 +27,7 @@ export default function Skills() {
           year: 4,
         },
         {
-          name: 'Gatsby / NextJS / Jekyll / Netlify',
+          name: 'Gatsby / NextJS / Netlify',
           year: 2,
         },
       ],
@@ -36,7 +36,7 @@ export default function Skills() {
       id: 2,
       icon: <BsGpuCard />,
       title: 'ML Engineer',
-      subtitle: `Around ${totalYearsWorked/6} years`,
+      subtitle: `Around ${totalYearsWorked / 6} years`,
       data: [
         {
           name: 'Auto categorization',
@@ -56,19 +56,31 @@ export default function Skills() {
       id: 3,
       icon: <BiServer />,
       title: 'Backend Developer',
-      subtitle: 'More than 3 years',
+      subtitle: 'More than 5 years',
       data: [
         {
           name: 'PHP / Laravel / MySQL',
           year: 2,
         },
         {
-          name: 'NodeJS / Mongoose / Postgres',
+          name: 'NodeJS / NestJS',
+          year: 4,
+        },
+        {
+          name: 'Mongoose / Postgres',
           year: 4,
         },
         {
           name: 'Firebase / Socket.io',
           year: 1,
+        },
+        {
+          name: 'AWS',
+          year: 2,
+        },
+        {
+          name: 'Python',
+          year: 2,
         },
       ],
     },

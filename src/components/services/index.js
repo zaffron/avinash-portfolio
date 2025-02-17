@@ -37,10 +37,10 @@ export default function Services() {
         </span>
       ),
       data: [
-        "Building dynamic and responsive user interfaces",
-        "Developing interactive web applications",
-        "Creating reusable and efficient components",
-        "Enhancing user experience with seamless performance"
+        'Building dynamic and responsive user interfaces',
+        'Developing interactive web applications',
+        'Creating reusable and efficient components',
+        'Enhancing user experience with seamless performance',
       ],
     },
     {
@@ -53,7 +53,7 @@ export default function Services() {
         </span>
       ),
       data: [
-        'REST API development',
+        'REST API development with Nestjs/ExpressJS',
         'GraphQL API development',
         'PHP/Node/Python supported backend development',
         'Automating deployment pipelines (CI/CD)',
