@@ -1,7 +1,7 @@
 ---
 path: the-path-to-keystrokes-of-vim
 date: 2025-03-13T19:10:21.136Z
-title: 'From Clicks to Keystrokes: My Journey into the Vim Cult" 🚀🔥'
+title: "From Clicks to Keystrokes: My Journey into the Vim Cult 🚀🔥"
 description: A nostalgic yet fiery journey from Sublime Text to embracing the
   Vim cult, battling the learning curve, and ultimately finding enlightenment in
   Neovim’s efficiency and freedom. 🚀💻
